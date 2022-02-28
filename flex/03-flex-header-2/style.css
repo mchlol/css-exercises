@@ -5,13 +5,30 @@ you'll learn about it later. */
 body {
   margin: 0;
   background: #eee;
-  font-family: Besley, serif;
+  font-family: 'Besley', serif;
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px;
+}
+
+.left-links {
+  display: flex;
+}
+
+.right-links {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  gap: 8px;
+  justify-content: flex-start;
 }
 
 .profile-image {
@@ -41,8 +58,16 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 8px;
+  padding: 4px;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
